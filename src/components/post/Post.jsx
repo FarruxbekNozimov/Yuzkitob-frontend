@@ -1,7 +1,7 @@
 import "./post.css";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
-import { format } from "timeago.js";
+import moment from "moment";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { MoreVert } from "@mui/icons-material";
@@ -59,7 +59,7 @@ export default function Post({ post }) {
 							<br />{" "}
 							<span className="postDate">
 								<WatchLaterRoundedIcon className="postDateIcon"></WatchLaterRoundedIcon>
-								{format(post.createdAt)}
+								{moment(post.createdAt).format("HH:mm")}
 							</span>
 						</span>
 					</div>
