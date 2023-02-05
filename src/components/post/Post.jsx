@@ -7,7 +7,7 @@ import { AuthContext } from "../../context/AuthContext";
 import { MoreVert } from "@mui/icons-material";
 import WatchLaterRoundedIcon from "@mui/icons-material/WatchLaterRounded";
 import BottomReaction from "../bottomReaction/BottomReaction";
-import { ChatBubbleOutlineRounded } from "@mui/icons-material";
+// import { ChatBubbleOutlineRounded } from "@mui/icons-material";
 
 export default function Post({ post }) {
 	const PF = process.env.REACT_APP_PUBLIC_FOLDER;
